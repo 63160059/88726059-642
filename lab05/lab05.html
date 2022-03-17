@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tage-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.Bootstrapcdn.com/Bootstrap/4.0.0/css/Bootstrap.min.css"
+        crossorigin="anonymous">
+        <title>Form Validation</title>
+        <script src="validation.js"></script>
+    </head>
+    <body onload="document.registform.userid.focus();">
+    <h1>Registration Form </h1>
+    <form method="post" name="registform" onsubmit="return formValidation();">
+    <ul>
+        <li>
+            <label for="userid">User ID :</label>
+            <input type="text" name="userid" size="12"/>
+        </li>
+        <li>
+            <label for="passid">password :</label>
+            <input type="password" name="passid" size="12"/>
+        </li>
+        <li>
+            <label for="username">User name :</label>
+            <input type="text" name="username" size="50"/>
+        </li>
+        <li>
+            <label for="address">Address</label>
+            <input type="text" name="address" size="50"/>
+        </li>
+        <li>
+            <lable for="country">Country:</lable>
+            <select name ="country">
+                <option selected="" value="Default">(please select a country)</option>
+                <option value="AF">Afghanistan</option>
+                <option value="AL">Albania</option>
+                <option value="ALG">Albania</option>
+                <option value="AND">Albania</option>
+                <option value="AND">Albania</option>
+            </select>
+        </li>
+        <li>
+            <label for="zip">ZIP Code:</label>
+            <input type="text" name="zip" />
+        </li>
+        <li>
+            <label for="email">Email:</label>
+            <input type="text" name="email" size="50"/>
+        </li>
+        <li>
+            <label id="gender">Sex:</label>
+            <input type="radio" name="sex" value="Male"/>
+            <span>Male</span>
+            <input type="radio" name="sex" value="Female"/>
+        </li>
+        <li>
+            <label>language:</label>
+            <input type="checkbox" name="en" value="en" checked />
+            <span>English</span>
+            <input type="checkbox" name="nonen" value="nonnen"/>
+            <span>Non English</span>
+        </li>
+        <li><input type= "submit" name="submit" value="Submit" /></li>
+        
+    </ul>
+    </form>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jQuery.com/jQuery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.Bootstrapcdn.com/Bootstrap/4.0.0/js/Bootstrap.min.js"
+    crossorigin="anonymous"></script>
+</body>
+</html>
